@@ -1,0 +1,522 @@
+
+/* =====================================
+   1. GLOBAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #071426,
+        #0a2540,
+        #063b50
+    );
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Common Section Settings */
+
+.top-section,
+.middle-section,
+.bottom-section {
+    width: 100%;
+    padding: 80px 8%;
+}
+
+.highlight {
+    color: #00d9ff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #00d9ff;
+}
+
+
+/* =====================================
+   2. HEADER / INTRODUCTION SECTION
+===================================== */
+
+.top-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+/* Left Side */
+
+.intro-details {
+    flex: 1;
+}
+
+.intro-details h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 10px;
+}
+
+.intro-details h2 {
+    font-size: 1.4rem;
+    color: #9edff0;
+    margin-bottom: 20px;
+}
+
+.intro-details h3 {
+    color: #00d9ff;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.about {
+    max-width: 600px;
+    color: #c5d5e5;
+    font-size: 1rem;
+}
+
+/* Right Side */
+
+.profile-container {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: clamp(220px, 28vw, 350px);
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #00d9ff;
+
+    box-shadow:
+        0 0 20px #00d9ff,
+        0 0 50px rgba(0, 217, 255, 0.3);
+}
+
+
+/* =====================================
+   3. MIDDLE / PROJECT SECTION
+===================================== */
+
+.middle-section {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.personal-projects,
+.collaborative-projects {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.personal-projects h3,
+.collaborative-projects h3 {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Horizontal Project Layout */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Individual Project Cards */
+
+.project-card {
+    flex: 1 1 280px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(0, 217, 255, 0.25);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 217, 255, 0.15);
+}
+
+.project-card h4 {
+    font-size: 1.3rem;
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #c5d5e5;
+    margin-bottom: 15px;
+}
+
+.project-card .technologies {
+    font-size: 0.9rem;
+    color: #69dff5;
+}
+
+.project-card a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #00d9ff;
+    text-decoration: none;
+
+    border-bottom: 1px solid #00d9ff;
+
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================
+   4. BOTTOM / CONTACT SECTION
+===================================== */
+
+.bottom-section {
+    min-height: 80vh;
+    padding-top: 100px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+/* Feedback Area */
+
+.feedback-area,
+.contact-area {
+    flex: 1;
+}
+
+.feedback-area h3,
+.contact-area h3 {
+    font-size: 1.5rem;
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.feedback-area p,
+.contact-area p {
+    color: #c5d5e5;
+    margin-bottom: 20px;
+}
+
+/* Feedback Form */
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#feedback-form label {
+    color: #ffffff;
+}
+
+#feedback {
+    width: 100%;
+    min-height: 150px;
+
+    padding: 15px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(0, 217, 255, 0.4);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#feedback:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+}
+
+#feedback::placeholder {
+    color: #91a9bb;
+}
+
+/* Send Button */
+
+#send-feedback {
+    width: fit-content;
+
+    padding: 12px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #007bff,
+        #00d9ff
+    );
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#send-feedback:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+/* Contact Links */
+
+.contact-area a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+.contact-area a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+
+.copyright {
+    text-align: center;
+
+    margin-top: 80px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #91a9bb;
+    font-size: 0.9rem;
+}
+
+
+/* =====================================
+   5. RESPONSIVE DESIGN
+===================================== */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .top-section,
+    .middle-section,
+    .bottom-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .intro-container {
+        gap: 30px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    .profile-image {
+        width: 250px;
+    }
+}
+
+
+/* Mobile Phones */
+
+@media (max-width: 650px) {
+
+    .top-section,
+    .middle-section,
+    .bottom-section {
+        padding: 60px 6%;
+    }
+
+    .top-section {
+        min-height: auto;
+    }
+
+    .intro-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro-details {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 210px;
+    }
+
+    .intro-details h2 {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-top: 50px;
+    }
+
+}
+
+/* =====================================
+   6. SCROLL ANIMATIONS
+===================================== */
+
+/* Initial animation settings */
+
+.top-section,
+.middle-section,
+.bottom-section {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+/* Sections become transparent when inactive */
+
+.top-section.fade-out,
+.middle-section.fade-out,
+.bottom-section.fade-out {
+    opacity: 0;
+}
+
+/* Sections become visible when active */
+
+.top-section.fade-in,
+.middle-section.fade-in,
+.bottom-section.fade-in {
+    opacity: 1;
+}
+
+/* =====================================
+   7. FEEDBACK INPUT FIELDS
+===================================== */
+
+#feedback-form input {
+    width: 100%;
+
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(0, 217, 255, 0.4);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#feedback-form input:focus {
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 10px rgba(0, 217, 255, 0.2);
+}
+
+#feedback-form input::placeholder {
+    color: #91a9bb;
+}
+
+/* Submission Status */
+
+#form-status {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    min-height: 24px;
+}
+
+#form-status.success {
+    color: #4ade80;
+}
+
+#form-status.error {
+    color: #ff6b6b;
+}

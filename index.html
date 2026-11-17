@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal portfolio showcasing my education, experience and projects.">
+
+    <title>My Portfolio</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- SECTION 1: HEADER / INTRODUCTION -->
+    <!-- ================================= -->
+
+    <header id="home" class="top-section">
+
+        <div class="intro-container">
+
+            <!-- Left Side: Personal Information -->
+
+            <div class="intro-details">
+
+                <h1><b>Hello, I'm </b><span class="highlight"><u>Bishal Samanta</u></span></h1>
+
+                <h2>Student | Developer | Programmer</h2>
+
+                <p class="about">
+                    Write a short introduction about yourself here.
+                    Tell visitors who you are, what you do and
+                    what you are passionate about.
+                </p>
+
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>Your Degree / Course</p>
+                    <p>Your College / University</p>
+                    <p>Your Graduation Year</p>
+                </div>
+
+                <div class="experience">
+                    <h3>Work Experience</h3>
+                    <p>Describe your work experience here.</p>
+                </div>
+
+                <div class="personal-details">
+                    <h3>Personal Details</h3>
+                    <p>Location: Your City</p>
+                    <p>Email: yourmail@example.com</p>
+                </div>
+
+            </div>
+
+            <!-- Right Side: Profile Picture -->
+
+            <div class="profile-container">
+
+                <img
+                    src="assets/profile.jpg"
+                    alt="My Profile Photograph"
+                    class="profile-image"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ============================= -->
+    <!-- SECTION 2: PROJECTS / BODY    -->
+    <!-- ============================= -->
+
+    <main id="projects" class="middle-section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <!-- Personal Projects -->
+
+        <section class="personal-projects">
+
+            <h3>Personal Projects</h3>
+
+            <div class="project-container">
+
+                <article class="project-card">
+
+                    <h4>Project One</h4>
+
+                    <p>
+                        Write a description of your first project.
+                        Explain its purpose and the technologies
+                        used to build it.
+                    </p>
+
+                    <p class="technologies">
+                        HTML | CSS | JavaScript
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h4>Project Two</h4>
+
+                    <p>
+                        Write a description of your second project
+                        and explain what you learned while building it.
+                    </p>
+
+                    <p class="technologies">
+                        Java | MySQL
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h4>Project Three</h4>
+
+                    <p>
+                        Write a description of your third project here.
+                    </p>
+
+                    <p class="technologies">
+                        Python | HTML | CSS
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Collaborative / Client Projects -->
+
+        <section class="collaborative-projects">
+
+            <h3>Collaborative & Client Projects</h3>
+
+            <div class="project-container">
+
+                <article class="project-card">
+
+                    <h4>Client Project One</h4>
+
+                    <p>
+                        Describe the project, your responsibilities
+                        and your contribution to its development.
+                    </p>
+
+                    <p class="technologies">
+                        Technologies Used
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h4>Team Project One</h4>
+
+                    <p>
+                        Describe the project and explain how you
+                        collaborated with other developers.
+                    </p>
+
+                    <p class="technologies">
+                        Technologies Used
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- SECTION 3: CONTACT / FOOTER  -->
+    <!-- ============================= -->
+
+    <footer id="contact" class="bottom-section">
+
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact-container">
+
+            <!-- Feedback Area -->
+
+           
+<!-- Feedback Area -->
+
+<div class="feedback-area">
+
+    <h3>Leave Your Feedback</h3>
+
+    <p>
+        I would love to hear your thoughts
+        and suggestions about my work.
+    </p>
+
+    <form id="feedback-form">
+
+        <!-- Visitor Name -->
+
+        <label for="visitor-name">Your Name</label>
+
+        <input
+            type="text"
+            id="visitor-name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <!-- Visitor Email -->
+
+        <label for="visitor-email">Your Email</label>
+
+        <input
+            type="email"
+            id="visitor-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <!-- Feedback Message -->
+
+        <label for="feedback">Your Message</label>
+
+        <textarea
+            id="feedback"
+            name="message"
+            rows="6"
+            placeholder="Write your feedback here..."
+            required
+        ></textarea>
+
+        <!-- Submit Button -->
+
+        <button type="submit" id="send-feedback">
+            Send Feedback
+        </button>
+
+        <!-- Submission Status -->
+
+        <p id="form-status" role="status" aria-live="polite"></p>
+
+    </form>
+
+</div>
+
+
+
+            <!-- Contact Area -->
+
+            <div class="contact-area">
+
+                <h3>Contact Me</h3>
+
+                <p>
+                    Interested in working together?
+                    Feel free to contact me.
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:yourmail@example.com">
+                        bishal.samanta75@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        https://github.com/Bishal718
+                    </a>
+                </p>
+
+                <p>
+                    LinkedIn:
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        https://www.linkedin.com/in/bishal-samanta-b15866381/
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Your Name. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
